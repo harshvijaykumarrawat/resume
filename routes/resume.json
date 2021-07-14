@@ -1,0 +1,215 @@
+{
+	"name" : "harsh rawat",
+	"position" : "Salesforce Developer",
+	"phone" : "+91-971-3028-045",
+	"email" : "harshvijaykumarrawat@gmail.com",
+	"title" : "Resume : Harsh Rawat",
+	"information" : [
+		{
+		   "title" : "BRIEF OVERVIEW",
+		   "dataPoint" : [
+				"Total 5 years 11 months of IT experience",
+				"Working in Salesforce.com CRM as a lead developer",
+				"Salesforce.com Certified Force.com developer (Platform Developer 1)",
+				"B.E Professional with zeal to make winning career",
+				"Motivated with internal standards of excellence to overachieve expectations and exceed all set goals",
+				"Well organized with good communication and people management skills",
+				"Proficiency at grasping new concepts quickly and utilizing it in a productive manner",
+				"Conversant with SFDC, Apex Batch Jobs, Apex Triggers, Apex Classes, Customization, Reports, Approval Processes, Sharing Rules, Profiles and Permission sets, Visualforce, JQuery, JavaScript, Java, Aura, LWC."
+			]
+		},
+		{
+		   "title" : "EXECUTIVE SUMMARY",
+		   "dataPoint" : [
+				"Experience in SFDC development using Apex classes and Triggers, Visualforce, Visual Studio Code.",
+				"Proficiency in SFDC Administrative tasks like creating Profiles, Roles, Users, Page Layouts, Email Services, Approvals, Workflows, Reports,Tasks and Events, customization.",
+				"Experience in data migration and integration using Apex Batch and Data Loader.",
+				"Hands on experience with Apex Language, Apex Trigger, Apex Class, Apex Batch, Salesforce custom objects, lookup relationships, junction objects, master-detail relationships, Salesforce Continuation callout, Site.com.",
+				"Proficiency in multiple languages i.e. Java, Node JS"
+			]
+		}
+	],
+	"exp" : {
+		"title" : "EXPERIENCE",
+		"currentComp" : "ABSYZ Software Consulting Pvt Ltd",
+		"position" : "Senior Software Consultant",
+		"startData" : "(April 2021 - Present)",
+		"basicDescr" : "Absyz is a multinational company specializing in software product development and technology services",
+		"resp" : [
+			"Lead the developer team of six to design and develop the integration part of the project.",
+			"Perform the t-shirt and ballpark estimates of the user stories and support the project estimates.",
+			"Responsible to analyze functional and technical requirements",
+			"Document and develop code according to specifications and standards.",
+			"Prepare test data and plan and conduct basic unit or module testing.",
+			"Provide support for quality assurance testing and defect resolution."
+		]
+	},
+	"spec" : [
+		{
+			"title" : "CERTIFICATION",
+			"desc" : "Salesforce Certified Platform Developer I (Certification #17650323)",
+			"isDesc" : true
+		},
+		{
+			"title" : "TECHNICAL SKILLS",
+			"isData" : {
+				"data" : [
+					"Saleforce.com platform",
+					"Apex",
+					"Customization",
+					"Reports",
+					"Approval Processes",
+					"Sharing Rules",
+					"Jenkins",
+					"ANT Deployment",
+					"JQuery",
+					"Java Script",
+					"HTML",
+					"Aura",
+					"LWC"
+				]
+			}
+		},
+		{
+			"title" : "SKILLS",
+			"isData" : {
+				"data" : [
+					{"type" : "APEX", "prg" : "100"},
+					{"type" : "JAVASCRIPT", "prg" : "100"},
+					{"type" : "JQUERY", "prg" : "100"},
+					{"type" : "Aura", "prg" : "25"},
+					{"type" : "LWC", "prg" : "25"},
+					{"type" : "Customization", "prg" : "80"},
+					{"type" : "Data Loader", "prg" : "100"},
+					{"type" : "ANT Deployment", "prg" : "100"},
+					{"type" : "Jenkins", "prg" : "50"}
+				]
+			}
+		}
+	],
+	"projects" : [
+		{
+			"name" : "Welspun Advanced Textile",
+			"client" : "Welspun Advanced Textile",
+			"role" : "Developer and Developer Lead",
+			"cloud" : "Salesforce.com",
+			"company" : "Absyz Software Consulting PVT. LTD.",
+			"language" : "Apex, Aura, LWC",
+			"desc" : "Welspun Advanced Textile is a private company that required a system to track the multiple stages of the business process. We have developed a system with Lead, Account, Contact, RnD, Design of Experiment management. We have set up the sharing ceriteria according to their data access, and developed reports for the visibility of the data."	
+		},
+		{
+			"name" : "Southern New Hampshire University",
+			"client" : "Southern New Hampshire University",
+			"role" : "Developer and Developer Lead",
+			"cloud" : "Salesforce.com",
+			"company" : "Deloitte US India PVT LTD",
+			"language" : "Apex, Aura, LWC",
+			"desc" : "Southern New Hampshire University is a public sector project; we have utilized the EDA managed package provided by Salesforce to track the different student life cycles. We have provided the admission, advising, registrations and financials track interfaces to maintain the information related to student. We also provided the interface to maintain the bi-directional communication between SFDC and legacy database (student information system (SIS)) through Ethos BUS and document system Image Now. We developed an interface to accept the Lead intake from client's public site. Using the LWC we had developed the student portal for students to login and register for the course"	
+		},
+		{
+			"name" : "Petra BAT",
+			"client" : "IVY Solutions",
+			"role" : "Senior Software Engineer",
+			"cloud" : "Salesforce.com",
+			"company" : "ABSYZ Software Consulting Pvt. Ltd.",
+			"language" : "Apex, Aura, JavaScript, Jquery",
+			"desc" : "We have developed an interface to provide multi-country and multicurrency online sales platform. The platform is connected with an Android app to track the vendor assigned assets with the information and images. We have developed the environment utilizing the sharing and security model and translation to make it available with multiple languages. To upload the images to track assets we have provided the integration with AWS to upload images."
+		},
+		{
+			"name" : "Intuit: Online Sales Experience",
+			"client" : "Intuit",
+			"role" : "Senior Software Engineer",
+			"cloud" : "Salesforce.com",
+			"company" : "Persistent Systems",
+			"language" : "Apex, SKUID, Visualforce, JavaScript, JQuery",
+			"desc" : "Online Sales Experience is online telesales platform in multicurrency-enabled org, handled by agents across the globe to sell QuickBooks Online product. We use services exposed by QBO system with user authentication and bearer token, to maintain Products, Price Books, Leads, Accounts, Assets, Contacts and Opportunities. We use standard marketing cloud provided by Salesforce. To maintain code reusability, we develop a generic structure for REST callouts  Provide support for quality assurance testing and defect resolution, and to increase performance of callouts we also designed generic Continuation framework using Salesforce continuation concept and to maintain the security of callouts, we designed the generic OAuth and OAuth2 communication along with bearer token."
+		},
+		{
+			"name" : "Intuit: Customer Connect",
+			"client" : "Intuit",
+			"role" : "Senior Software Engineer",
+			"cloud" : "Salesforce.com",
+			"company" : "Persistent Systems",
+			"language" : "Apex, SKUID, Visualforce, JavaScript, JQuery",
+			"desc" : "Intuit provide services to experiment in their labs. Customer connect is the Site.com portal for Inuit employees to connect to their customers who perform experiments. This portal allows Intuit employees to access ongoing Studies/Experiments and create new ones. Intuit has more than thousand employees to access this portal so we created public site and connect their SSO with public site. We use SKUID, Custom Objects, Approval Process, Apex Triggers, Custom Labels, Custom Setting and Profile. We have to customized user login and user maintenance, as all the users are login in to Site.com which is being handled as single user in Salesforce."
+		},
+		{
+			"name" : "Optum: External Database Integration",
+			"client" : "Optum",
+			"role" : "Software Engineer",
+			"cloud" : "Salesforce.com",
+			"company" : "Persistent Systems",
+			"language" : "Apex, Visualforce, JavaScript, JQuery",
+			"desc" : "Optum External Database Integration is to import external data into Salesforce so  that whenever new client come to Optum their engineers can import the hospital database into Data.com. We have designed the JSON structure to send data into Salesforce and map different field values to JSON to Salesforce objects.  We also provide the Java tool with the connection of MySQL and Oracle to  generate the JSON at run time and to trigger the SFDC exposed REST by  providing Salesforce user authorization."
+		},
+		{
+			"name" : "Optum: Care Coordination",
+			"client" : "Optum",
+			"role" : "Software Engineer",
+			"cloud" : "Salesforce.com",
+			"company" : "Persistent Systems",
+			"language" : "Apex, Visualforce, JavaScript, JQuery",
+			"desc" : "Optum Care Coordination is use to effectively manage care coordination  activities. Care Coordination is based on the patient’s data received from  Optum Analytics. Optum Care Coordination streamlines the care coordination  using pre-defined care pathways, plan of care, medication, issues and tasks."
+		},
+		{
+			"name" : "Optum: Patient Application",
+			"client" : "Optum",
+			"role" : "Software Engineer",
+			"cloud" : "Salesforce.com",
+			"company" : "Persistent Systems",
+			"language" : "Apex, Visualforce, JavaScript, JQuery",
+			"desc" : "Patient App is the mobile version of Plan of Care which allows users to track their  meeting timing, medication timing and allows them to contact their assigned caretakers via audio or video conferencing. We exposed the Salesforce REST to  external system to provide task and event information and alert users for their actions."
+		},
+		{
+			"name" : "Optum: Plan of Care",
+			"client" : "Optum",
+			"role" : "Software Engineer",
+			"cloud" : "Salesforce.com",
+			"company" : "Persistent Systems",
+			"language" : "Apex, Visualforce, mustache.js, JavaScript, JQuery",
+			"desc" : "Optum Plan of Care is the Salesforce portal to monitor and refactor the medical  procedures and tasks. We use Contacts as patients and create different task and  events (pre-defined and new), as requires. To develop this portal, we use Visualforce page, mustache JS, Apex Class and remote callouts. We also  configure the tabs in Care Console in salesforce and provide different type of  events i.e. Alert on new plan creation, event-timing alert, meeting alert. It also  allows PDF report generation of the patient."
+		}
+	],
+	"education" : [
+		{
+			"degree" : "10th",
+			"university" : "U.P. Board",
+			"year" : "2009",
+			"percentage" : "63%"
+		},
+		{
+			"degree" : "12th",
+			"university" : "U.P. Board",
+			"year" : "2011",
+			"percentage" : "73%"
+		},
+		{
+			"degree" : "Bachelor of  Engineering",
+			"university" : "Rajiv Gandhi Technical University",
+			"year" : "2015",
+			"percentage" : "7.9/10"
+		}
+	],
+	"achievements" : {
+		"data" : [
+			"Awarded with spot award by Deloitte and pearl award by SNHU (current client).",
+			"Training at Cloud Computing at Appin Technology Labs, Bhopal",
+			"Training at Oracle SQl/PL-SQL at DBase Cloud, Bhopal",
+			"Attended workshop on Development of LWC in Salesforce and awarded with token of appreciation by host for the quick responses."
+		]
+	},
+	"personal" : [
+		{
+			"title" : "Date of Birth",
+			"value" : "27th October 1995"
+		},
+		{
+			"title" : "Languages Known",
+			"value" : "English, Hindi"
+		},
+		{
+			"title" : "Address",
+			"value" : "322 Subhash Nagar, Konch Jalaun, Uttar Pradesh (285205)"
+		}
+	]
+} 
