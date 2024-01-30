@@ -1,0 +1,284 @@
+<html>
+   <head>
+      <!-- CSS only -->
+	  <title>{{title}}</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+      <style>
+         thead, .customColor, .projHead{
+         background-color: #366091;
+         color: white;
+         }
+         tr.projHead td, tbody.project tr td{
+         padding-left : 12px;
+         }
+         @media print {
+         body {-webkit-print-color-adjust: exact;}
+         }
+		 .profileName, .profileType {
+			color: #366091;
+		 }
+		 .contactInfo{
+			color: slategray;
+		 }
+      </style>
+   </head>
+   <body>
+   <div class="container">
+               <h1 style="text-transform: uppercase; text-align: -webkit-center;" class="profileName">{{name}}</h1>
+               <h2 style="text-transform: uppercase; text-align: -webkit-center;" class="profileType">{{position}}</h2>
+   <table>
+      <tbody>
+         <tr>
+            <td style="width:25vw;padding-top:-2px" >
+			   {{#spec}}
+			   <br/>
+			   <div class="card text-center">
+                  <div class="card-header customColor" style="text-transform: uppercase; text-align: -webkit-center;">
+                     {{title}}
+                  </div>
+                  <div class="card-body">
+					{{#isDesc}}
+					<p class="card-text" style="text-align: start;">{{desc}}</p>
+					{{/isDesc}}
+					{{#isData}}
+                     <ul class="list-group list-group-flush" style="text-align: start;">
+						{{#data}}
+							{{#type}}
+							<li class="list-group-item">{{.}}</li>
+							{{/type}}
+							{{#prg}}
+							<div class="progress">
+							  <div class="progress-bar" role="progressbar" style="width: {{.}}%" aria-valuenow="{{.}}" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							{{/prg}}
+							{{^type}}
+							<li class="list-group-item">{{.}}</li>
+							{{/type}}
+						{{/data}}
+                     </ul>
+					{{/isData}}
+                  </div>
+               </div>
+			   {{/spec}}
+            </td>
+            <td style="width:75vw" class="description">
+               <div/>
+               <div class="row">
+                  <div class="col-4 sm-6 contactInfo" style="text-align: start;padding-right:0px;">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                     </svg>
+                     {{phone}}
+                  </div>
+                  <div class="col-8 contactInfo" style="text-align: end;">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                     </svg>
+                    {{email}}
+                  </div>
+               </div>
+               <div/>
+			   {{#information}}
+               <div class="card text-center">
+                  <div class="card-header customColor" style="text-transform: uppercase; text-align: -webkit-center;">
+                     {{title}}
+                  </div>
+                  <div class="card-body">
+                     <ul class="list-group list-group-flush" style="text-align: start;">
+						{{#dataPoint}}
+                        <li class="list-group-item">{{.}}</li>
+						{{/dataPoint}}
+                     </ul>
+                  </div>
+               </div>
+			   {{/information}}
+               <div/>
+			   {{#exp}}
+               <div class="card text-center">
+                  <div class="card-header customColor" style="text-transform: uppercase; text-align: -webkit-center;">
+                     {{title}}
+                  </div>
+                  <div class="card-body">
+					<h5 class="card-title" style="text-align: start;">{{currentComp}}</h5>
+					<p class="card-text" style="text-align: end;">{{position}} : {{startData}}</p>
+					<p class="card-text" style="text-align: start;">{{basicDescr}}</p>
+                     <ul class="list-group list-group-flush" style="text-align: start;">
+						{{#resp}}
+                        <li class="list-group-item">{{.}}</li>
+						{{/resp}}
+                     </ul>
+                  </div>
+               </div>
+			   {{/exp}}
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br/>
+      <div class="card text-center">
+         <div class="card-header customColor" style="text-transform: uppercase; text-align: -webkit-center;">
+            Projects
+         </div>
+         <div class="card-body">
+			{{#projects}}
+			<br/>
+            <table>
+               <tbody class="project">
+				<tr class="projHead">
+                     <td style="width:20vw;">
+                        Project
+                     </td>
+                     <td style="width:80vw;">
+                        {{name}}
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width:20vw;">
+                        Client
+                     </td>
+                     <td style="width:80vw;">
+                        {{client}}
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width:20vw;">
+                        Role
+                     </td>
+                     <td style="width:80vw;">
+                        {{role}}
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width:20vw;">
+                        Cloud
+                     </td>
+                     <td style="width:80vw;">
+                        {{cloud}}
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width:20vw;">
+                        Company
+                     </td>
+                     <td style="width:80vw;">
+                        {{company}}
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width:20vw;">
+                        Language
+                     </td>
+                     <td style="width:80vw;">
+                        {{language}}
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width:20vw;float: inline-start;">
+                        Description
+                     </td>
+                     <td style="width:80vw;">
+                        {{desc}}
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+			{{/projects}}
+         </div>
+      </div>
+	  <br/>
+	  <div class="card text-center">
+         <div class="card-header customColor" style="text-transform: uppercase; text-align: -webkit-center;">
+            Education
+         </div>
+         <div class="card-body">
+            <table>
+               <thead>
+                  <tr>
+                     <td style="width:25vw;">
+                        Examination
+                     </td>
+                     <td style="width:25vw;">
+                        Board/ University
+                     </td>
+                     <td style="width:25vw;">
+                        Year of Passing
+                     </td>
+                     <td style="width:25vw;">
+                        Percentage/ CGPA
+                     </td>
+                  </tr>
+               </thead>
+               <tbody class="project">
+				{{#education}}
+                  <tr>
+                     <td style="width:25vw;">
+                        {{degree}}
+                     </td>
+                     <td style="width:25vw;">
+                        {{university}}
+                     </td>
+                     <td style="width:25vw;">
+                        {{year}}
+                     </td>
+                     <td style="width:25vw;">
+                        {{percentage}}
+                     </td>
+                  </tr>
+				{{/education}}
+               </tbody>
+            </table>
+         </div>
+      </div>
+	  <br/>
+	  <div class="card text-center">
+		  <div class="card-header customColor" style="text-transform: uppercase; text-align: -webkit-center;">
+			 ACHIEVEMENTS
+		  </div>
+		  <div class="card-body">
+			{{#achievements}}
+			 <ul class="list-group list-group-flush" style="text-align: start;">
+				{{#data}}
+				<li class="list-group-item">{{.}}</li>
+				{{/data}}
+			 </ul>
+			{{/achievements}}
+		  </div>
+	   </div>
+	   <br/>
+	  <div class="card text-center">
+         <div class="card-header customColor" style="text-transform: uppercase; text-align: -webkit-center;">
+            Personal Details
+         </div>
+         <div class="card-body">
+            <table>
+               <tbody class="project">
+				{{#personal}}
+                  <tr>
+                     <td style="width:20vw;">
+                        {{title}}
+                     </td>
+                     <td style="width:80vw;">
+                        : {{value}}
+                     </td>
+                  </tr>
+				{{/personal}}
+               </tbody>
+            </table>
+         </div>
+      </div>
+	  <br/>
+	  <div class="card">
+		  <div class="card-body">
+			<h5 class="card-title">DECLARATION</h5>
+			<p class="card-text">The above information is true to the best of my knowledge and belief.</p>
+			<p class="card-text">Date: January 30, 2024</p>
+			<p class="card-text">Place: Pune</p>
+			<p class="card-text" style="text-align: end;">Harsh Rawat</p>
+		  </div>
+		</div>
+   </div>
+   </body>
+</html>
