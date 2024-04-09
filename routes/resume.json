@@ -1,6 +1,6 @@
 {
 	"name" : "harsh rawat",
-	"position" : "Salesforce Developer",
+	"position" : "Salesforce Architect",
 	"phone" : "+91-971-3028-045",
 	"email" : "harshvijaykumarrawat@gmail.com",
 	"title" : "Resume : Harsh Rawat",
@@ -9,7 +9,7 @@
 		   "title" : "BRIEF OVERVIEW",
 		   "dataPoint" : [
 				"Total 8.5 years of IT experience.",
-				"Working in Salesforce.com CRM as a lead developer.",
+				"Working in Salesforce.com CRM as an architect and lead developer.",
 				"Salesforce.com Certified Force.com developer (PD1 and CPQ Specialist).",
 				"B.E Professional with zeal to make winning career.",
 				"Motivated with internal standards of excellence to overachieve expectations and exceed all set goals.",
@@ -36,7 +36,7 @@
 		"startData" : "(April 2021 - Present)",
 		"basicDescr" : "Absyz is a multinational company specializing in software product development and technology services",
 		"resp" : [
-			"Lead the developer team of six to design and develop the integration part of the project.",
+			"Lead the developer team of six to design and develop the integral part of the project.",
 			"Perform the t-shirt and ballpark estimates of the user stories and support the project estimates.",
 			"Responsible for analyzing functional and technical requirements.",
 			"Document and develop code according to specifications and standards.",
@@ -86,7 +86,7 @@
 		{
 			"name" : "Lead to Cash",
 			"client" : "FactSet",
-			"role" : "Junior Architect And Developer",
+			"role" : "Architect And Lead Developer",
 			"cloud" : "Salesforce.com",
 			"company" : "Absyz Software Consulting PVT. LTD.",
 			"language" : "Apex, Aura, LWC, CPQ",
@@ -95,7 +95,7 @@
 		{
 			"name" : "Telematics",
 			"client" : "Concentrix",
-			"role" : "Developer and Junior Architect ",
+			"role" : "Architect And Lead Developer",
 			"cloud" : "Salesforce.com",
 			"company" : "Absyz Software Consulting PVT. LTD.",
 			"language" : "Apex, Aura, LWC",
@@ -113,7 +113,7 @@
 		{
 			"name" : "Southern New Hampshire University",
 			"client" : "Southern New Hampshire University",
-			"role" : "Developer and Developer Lead",
+			"role" : "Architect And Lead Developer",
 			"cloud" : "Salesforce.com",
 			"company" : "Deloitte US India PVT LTD",
 			"language" : "Apex, Aura, LWC",
